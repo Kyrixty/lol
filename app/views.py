@@ -16,11 +16,7 @@ def load_user(id):
 
 @app.route("/")
 def homePage():
-    rootdir = os.path.dirname(__file__).split("\\app")[0]
-    if os.path.isfile(rootdir+"/app.db") and os.path.isdir(rootdir+"/migrations"):
-        return render_template("index.html")
-    else:
-        return "Your server is almost fully setup! Read \"DB-MIGRATION-HELP.txt\" for information on how to setup your database."
+    return render_template("index.html")
 
 @app.route("/login")
 @app.route("/signin")

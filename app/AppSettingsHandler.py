@@ -25,7 +25,7 @@ class SettingsHandler:
         '''
         Returns app settings.
         '''
-        with open(basedir+"\\appSettings.json", mode="r") as f:
+        with open(basedir+"/appSettings.json", mode="r") as f:
             return json.load(f)
     
     def writeAppSettings(settings: dict):

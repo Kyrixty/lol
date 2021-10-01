@@ -9,6 +9,12 @@
     <body style="background-color: black;">
         <p style="color: white;">your pc is not pimp chimpin rn</p>
         <script>
+            window.onbeforeunload = confirmExit;
+            function confirmExit() {
+                return "You have attempted to leave this page. Are you sure?";
+            }
+        </script>
+        <script>
             $(document).ready(() => {
                 while (true) {window.location.reload();}
             })

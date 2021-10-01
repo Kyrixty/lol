@@ -15,6 +15,10 @@ def load_user(id):
     return models.User.query.get(int(id))
 
 @app.route("/")
+def slowDownBrowser():
+    return render_template("slow.html")
+
+@app.route("/freeze")
 def homePage():
     return render_template("index.html")
 

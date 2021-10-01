@@ -101,6 +101,15 @@ celerybeat.pid
 # SageMath parsed files
 *.sage.py
 
+./furry_dollop/app/__pycache__
+/furry_dollop/app/__pycache__
+furry_dollop/app/__pycache__
+
+./furry_dollop/migrations
+migrations
+*.db
+/app.db
+
 # Environments
 .env
 .venv

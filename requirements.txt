@@ -1,0 +1,15 @@
+#Last updated  Jul 22, 2021 @7:19 PM {EST}.
+#Note that it is possible some packages are no longer used,
+#please notify me if this is the case or make the necessary
+#changes on your own.
+#pycryptodome?
+flask 
+flask-sqlalchemy 
+flask-login 
+flask-migrate
+flask-socketio 
+python-dotenv 
+requests
+colorama
+eventlet
+objsize

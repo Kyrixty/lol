@@ -1,0 +1,6 @@
+Open your terminal (ensure you're in the root directory of this project) and type the following:
+
+flask db migrate (if an error shows telling you to run flask db init, do that then type these commands)
+flask db upgrade
+
+Done

